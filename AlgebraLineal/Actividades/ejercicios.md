@@ -5,11 +5,9 @@ El determinante es una función que asigna un número escalar a una matriz cuadr
 
 Para una matriz de $2 \times 2$:
 
-```math
-A \(= \begin{pmatrix} a & b \\ c & d \end{pmatrix} \%\%\)MAGIT_PARSER_PROTECT%%```
 
 Su determinante se calcula como:
 
-```math
-\(\det\)(A) |A| = ad - bc
-```
+
+
+
