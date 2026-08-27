@@ -1,7 +1,7 @@
 
 Dado las siguientes ecuaciones diferenciales:
 
- $$\ddot{x}+7\dot{x}+4x=\sen(t) $$, $$x(0)=1$$, $$\dot{x}(0)=2$$
+ $$\ddot{x}+7\dot{x}+4x=\sin(t) $$, $$x(0)=1$$, $$\dot{x}(0)=2$$
 	
   $$\ddot{x}+2\dot{x}+10x=cos(4t) $$, $$x(0)=-2$$, $$\dot{x(0)}=0$$
 
