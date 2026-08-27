@@ -9,5 +9,5 @@ Para una matriz de $2 \times 2$:
 Su determinante se calcula como:
 
 
-
+La regla de Cramer es un método matemático para resolver sistemas de ecuaciones lineales compatibles determinados (con una solución única). 
 
