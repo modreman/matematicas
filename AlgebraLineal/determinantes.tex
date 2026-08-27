@@ -1,0 +1,81 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\newtheorem{teo}{Teorema}
+\newtheorem{ej}{Ejemplo}
+
+\title{Determinantes y la Regla de Cramer}
+\author{Álgebra Lineal}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Introducción a los Determinantes}
+	El determinante es una función que asigna un número escalar a una matriz cuadrada. Sea $A$ una matriz cuadrada de orden $n \times n$, su determinante se denota como $\det(A)$ o $|A|$.
+	
+	\subsection{Determinante de orden 2x2}
+	Para una matriz de $2 \times 2$:
+	\[
+	A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}
+	\]
+	Su determinante se calcula como:
+	\[
+	\det(A) = |A| = ad - bc
+	\]
+	
+	\subsection{Determinante de orden 3x3 (Regla de Sarrus)}
+	Para una matriz de $3 \times 3$, se pueden repetir las dos primeras columnas al final y sumar los productos de las diagonales principales restando las secundarias.
+	
+	\section{La Regla de Cramer}
+	La regla de Cramer es un método matemático para resolver sistemas de ecuaciones lineales compatibles determinados (es decir, que tienen una solución única). 
+	
+	Utiliza los determinantes de la matriz de coeficientes del sistema y de las matrices que resultan de reemplazar una columna por los términos independientes.
+	
+	Dado un sistema de $n$ ecuaciones con $n$ incógnitas representado en forma matricial como $A \cdot X = B$, el valor de cada incógnita $x_i$ se calcula así:
+	\[
+	x_i = \frac{\det(A_i)}{\det(A)}
+	\]
+	Donde $A_i$ es la matriz resultante de sustituir la columna $i$-ésima de $A$ por el vector columna de los términos independientes $B$, y se exige que $\det(A) \neq 0$.
+	
+	\begin{ej}
+		Resolver el siguiente sistema de ecuaciones lineales $2 \times 2$:
+		\[
+		\begin{cases}
+			3x + 2y = 7 \\
+			x - y = 1
+		\end{cases}
+		\]
+		
+		\textbf{Paso 1:} Identificar la matriz de coeficientes $A$ y el vector $B$:
+		\[
+		A = \begin{pmatrix} 3 & 2 \\ 1 & -1 \end{pmatrix}, \quad B = \begin{pmatrix} 7 \\ 1 \end{pmatrix}
+		\]
+		
+		\textbf{Paso 2:} Calcular el determinante principal $\det(A)$:
+		\[
+		\det(A) = (3)(-1) - (2)(1) = -3 - 2 = -5
+		\]
+		
+		\textbf{Paso 3:} Calcular $\det(A_x)$ sustituyendo la primera columna por $B$:
+		\[
+		A_x = \begin{pmatrix} 7 & 2 \\ 1 & -1 \end{pmatrix} \implies \det(A_x) = (7)(-1) - (2)(1) = -7 - 2 = -9
+		\]
+		
+		\textbf{Paso 4:} Calcular $\det(A_y)$ sustituyendo la segunda columna por $B$:
+		\[
+		A_y = \begin{pmatrix} 3 & 7 \\ 1 & 1 \end{pmatrix} \implies \det(A_y) = (3)(1) - (7)(1) = 3 - 7 = -4
+		\]
+		
+		\textbf{Paso 5:} Encontrar las soluciones para $x$ e $y$:
+		\[
+		x = \frac{\det(A_x)}{\det(A)} = \frac{-9}{-5} = \frac{9}{5}, \quad y = \frac{\det(A_y)}{\det(A)} = \frac{-4}{-5} = \frac{4}{5}
+		\]
+		\end{ej}
+			
+		\end{document}
