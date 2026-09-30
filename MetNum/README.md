@@ -50,5 +50,5 @@ Este curso está diseñado para proporcionar al estudiante una introducción só
 6.2.2. Regla de Simpson 1/3 y 3/8.
 6.3. Método de Euler
 
-💻 Software
-Se utiliza Software matemático: GNU Octave
+### 💻 Software
+Se utiliza GNU Octave
