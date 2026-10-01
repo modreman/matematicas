@@ -16,3 +16,5 @@ Este curso tiene como propósito que el alumno utilice conocimientos matemático
 ### Unidad  IV Sistemas de fluidos y sistemas térmicos
 
 
+### 💻 Software
+Se utiliza GNU Octave
