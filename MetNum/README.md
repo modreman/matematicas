@@ -1,4 +1,4 @@
-# Metodos Numéricos
+# Métodos Numéricos
 Este es un curso que doy en el semestre Enero-julio.
 
 ## Propósito general del curso
