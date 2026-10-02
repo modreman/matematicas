@@ -1,6 +1,5 @@
 # Métodos Numéricos
-Este es un curso que doy en el semestre Enero-julio.
-
+Repositorio para la asignatura  Métodos Numéricos, en el 4to semestre  en la Escuela de  Ingeniería, Cetys Universidad. Campus Tijuana.
 ## Propósito general del curso
 Este curso está diseñado para proporcionar al estudiante una introducción sólida a los métodos numéricos que le permitan resolver situaciones en las cuales se requiere una solución numérica a un problema y los procedimientos analíticos son incapaces de dar respuesta. 
 ## Contenido:
