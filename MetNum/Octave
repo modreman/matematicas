@@ -1,1 +1,11 @@
 
+x=0:0.01:2*pi;
+y1=sin(x);
+y2=cos(x);
+
+plot(x,y1,'b','linewidth',3,x,y2,'r','linewidth',3)
+grid on
+title('graficos')
+xlabel('x')
+ylabel('sen(x),cos(x)')
+legend('cos(x)','sen(x)')
