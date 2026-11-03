@@ -1,4 +1,4 @@
-function biseccion23
+function biseccion
 clc
 a=1;
 b=2;
